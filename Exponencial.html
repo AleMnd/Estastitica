@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Distribuição Exponencial</title>
+  <link rel="stylesheet" type="text/css" href="CSS/Exp.css">
+  <link rel="shortcut icon" type="imagex/png" href="/imagens/3832383.png">
+</head>
+<body id="fundo">
+  <div id="cabeçalho">
+    <div class="navegar">
+      <a href="index.html"><button class="inicio-button"><h2>Página Inicial</h2></button></a>
+    </div>
+    <div class="navegar">
+      <a href="Uniforme.html"><button class="button"><h2>Distribuição Uniforme</h2></button></a>
+    </div>
+    <div class="navegar">
+      <a href="Exponencial.html"><button class="join-button"><h2>Distribuição Exponencial</h2></button></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Bloco 1: Maior/Menor -->
+    <div class="cal">
+      <div class="uni">
+        <h1>Distribuição Exponencial</h1>
+      </div>
+      <div class="for">
+        <div class="form-group">
+          <label for="a">Valor de a:</label>
+          <input type="number" id="a" step="any" min="0">
+        </div>
+        <div class="form-group">
+          <label for="tudo">ΣXi.Fi:</label>
+          <input type="number" id="tudo" step="any" min="0">
+        </div>
+        <div class="form-group">
+          <label for="n">Total de frequência:</label>
+          <input type="number" id="n" step="any" min="0">
+        </div>
+      </div>
+        <div class="button-row">
+          <button onclick="maior()">Maior</button>
+          <button onclick="menor()">Menor</button>
+        </div>
+      <div id="resultado"></div>
+    </div>
+    <!-- Bloco 2: Entre A e B -->
+    <div class="cal2">
+      <div class="uni">
+        <h1>Probabilidade entre 'a' e 'b'</h1>
+      </div>
+      <div class="for">
+        <div class="form-group">
+          <label for="entreA">Valor de a:</label>
+          <input type="number" id="entreA" step="any" min="0">
+        </div>
+        <div class="form-group">
+          <label for="entreB">Valor de b:</label>
+          <input type="number" id="entreB" step="any" min="0">
+        </div>
+        <div class="form-group">
+          <label for="total">ΣXi.Fi:</label>
+          <input type="number" id="total" step="any" min="0">
+        </div>
+        <div class="form-group">
+          <label for="freq">Total de frequência:</label>
+          <input type="number" id="freq" step="any" min="0">
+        </div>
+        <div class="enviar">
+          <button onclick="entre()">Calcular</button>
+        </div>
+        </div>
+        <div>
+          <div id="resultado2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="JS/Exp.js"></script>
+</body>
+</html>

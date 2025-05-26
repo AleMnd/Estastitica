@@ -1,0 +1,73 @@
+#fundo {
+    position: relative;
+    height: 100vh;
+    background: url(../imagens/ef5b21fc411295a0c7847f6986c808ca.png) no-repeat center center;
+    background-size: cover;
+
+}
+.tamanho{
+    margin: 10% 30% ;
+}
+.logo{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: subir 1s ease-out forwards;
+}
+.logo img{
+    width: 100%;
+    filter: brightness(95%);
+}
+@keyframes subir{
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.logo img:hover{
+    filter: brightness(100%)
+}
+.entradas{
+    margin-top:60px;
+}
+.primeiro{
+    float: left;
+}
+.segundo{
+    float:right;
+}
+.join-button {
+    margin-top:50px;
+    padding:10px 50px;
+    border:none;
+    border-radius: 70px;
+    color: color-mix(in srgb, rgb(212, 40, 40), #f3ecec 60%);
+    background:#fff;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: subir 1s ease-out forwards;
+}
+.button{
+    margin-top: 50px;
+    padding: 10px 70px;
+    border:none;
+    border-radius: 70px;
+    color: color-mix(in srgb, rgb(212, 40, 40), #f3ecec 60%);
+    background: #fff;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: subir 1s ease-out forwards;
+}
+.button:hover{
+    background:color-mix(in srgb, rgb(212, 40, 40), #f3ecec 60%);
+    color: #fff;
+    text-shadow:none;
+    text-decoration: underline;
+}
+.join-button:hover{
+    background:color-mix(in srgb, rgb(212, 40, 40), #f3ecec 60%);
+    color: #fff;
+    text-shadow:none;
+    text-decoration: underline;
+}
