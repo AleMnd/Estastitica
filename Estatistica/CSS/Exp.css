@@ -221,3 +221,7 @@
   font-family: 'tapas';
   color:#fff;
 }
+.aparecer p{
+  font-size: 18px;
+  text-shadow: 1px 2px 1px #000000;
+}
