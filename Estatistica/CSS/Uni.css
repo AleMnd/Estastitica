@@ -148,11 +148,15 @@
     margin-top: 20px;
     font-size: 18px;
     text-shadow: 1px 2px 1px #000000;
+    transform: translateY(30px);
+    animation: subir 1s ease-out forwards;
 }
 .aparecer{
     font-family: 'tapas';
     color:color-mix(in srgb, rgb(212, 40, 40), #f3ecec 60%);
     text-align: center;
+    transform: translateY(30px);
+    animation: subir 1s ease-out forwards;
 }
 
 .grid{
@@ -161,6 +165,11 @@
     grid-gap: 10px;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+.inuts-entre{
+    transform: translateY(30px);
+    animation: subir 1s ease-out forwards;
 }
 
 input[type="checkbox"] {

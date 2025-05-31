@@ -12,6 +12,22 @@ document.getElementById('entre').addEventListener('change', function () {
   inputsEntre.style.display = this.checked ? 'block' : 'none';
 });
 
+const entreCheckbox = document.getElementById('entre');
+const inputsEntre = document.getElementById('inputs-entre');
+
+entreCheckbox.addEventListener('change', function () {
+  if (this.checked) {
+    inputsEntre.style.display = 'block';
+    inputsEntre.style.opacity = '0';
+
+    void inputsEntre.offsetWidth;
+    inputsEntre.classList.add('inuts-entre');
+  } else {
+    inputsEntre.style.display = 'none';
+    inputsEntre.classList.remove('inuts-entre');
+  }
+});
+
 function calcular() {
   const a = parseFloat(document.getElementById('a').value);
   const b = parseFloat(document.getElementById('b').value);

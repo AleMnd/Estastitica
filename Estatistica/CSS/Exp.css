@@ -217,6 +217,11 @@
 .enviar button{
   padding: 20px 60px;
 }
+
+.aparecer{
+    transform: translateY(30px);
+    animation: subir 1s ease-out forwards;
+}
 .aparecer h2{ 
   font-family: 'tapas';
   color:#fff;
