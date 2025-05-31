@@ -86,7 +86,6 @@
 .for {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     margin-top: 20px;
 }
 
@@ -96,15 +95,15 @@
   }
 
 .for input {
-    width: 100%;
-    padding: 8px;
+    width: 80%;
+    padding: 0px;
     border-radius: 6px;
     border: 1px solid #ccc;
 }
 
 .for .form-group {
-    display: flex;
-    flex-direction:column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .form-group input{
     background: none;
@@ -126,7 +125,6 @@
 }
 
 .form-group label{
-    text-align: center;
     font-size: 20px;
 }
 
@@ -148,9 +146,22 @@
 }
 #resultado {
     margin-top: 20px;
+    font-size: 18px;
+    text-shadow: 1px 2px 1px #000000;
 }
 .aparecer{
     font-family: 'tapas';
     color:color-mix(in srgb, rgb(212, 40, 40), #f3ecec 60%);
     text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 40px;
+}
+
+input[type="checkbox"] {
+  accent-color:color-mix(in srgb, rgb(212, 40, 40), #f3ecec 60%);
 }
