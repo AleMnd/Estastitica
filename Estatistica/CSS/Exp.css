@@ -6,7 +6,7 @@
 @keyframes subir {
   to {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(-5px);
   }
 }
 
@@ -171,6 +171,9 @@
   font-family: 'tapas';
   color: color-mix(in srgb, rgb(212, 40, 40), #f3ecec 60%);
   text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: subir 1s ease-out forwards;
 }
 .container {
   display: flex;
@@ -218,10 +221,6 @@
   padding: 20px 60px;
 }
 
-.aparecer{
-    transform: translateY(30px);
-    animation: subir 1s ease-out forwards;
-}
 .aparecer h2{ 
   font-family: 'tapas';
   color:#fff;
